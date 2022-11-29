@@ -1,4 +1,12 @@
-api/__pycache__/
-api/Views/__pycache__/
+auth_api/__pycache__/
+auth_api/Views/__pycache__/
+auth_api/models/__pycache__/
+auth_api/serializers/__pycache__/
+
+post_api/__pycache__/
+post_api/views/__pycache__/
+post_api/models/__pycache__/
+post_api/serializers/__pycache__/
+
 social_network/__pycache__/
 venv/
