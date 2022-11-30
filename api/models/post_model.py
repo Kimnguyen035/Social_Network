@@ -1,5 +1,5 @@
 from django.db import models
-from auth_api.models.auth_model import User
+# from ..models.auth_model import User
 
 class Post(models.Model):
     class Meta:
