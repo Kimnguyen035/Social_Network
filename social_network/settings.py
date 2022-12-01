@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     # 'rest_framework_simplejwt',
-    'auth_api',
-    'post_api'
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +66,10 @@ REST_FRAMEWORK = {
         "%d-%m-%Y %H:%M:%S",
     ],
     'DATETIME_FORMAT':"%d/%m/%Y %H:%M:%S",
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ]
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     # 'PAGE_SIZE': 2
 }
@@ -94,13 +97,6 @@ WSGI_APPLICATION = 'social_network.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.BasicAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
-    ]
-}
 
 DATABASES = {
     'default': {

@@ -1,12 +1,12 @@
 from django.db import models
 
-class User(models.Model):
+
+class SavePost(models.Model):
     class Meta:
-        db_table = "user"
+        db_table = "save_post"
     id = models.AutoField(primary_key=True)
-    username = models.CharField(max_length=255)
-    email = models.CharField(max_length=255)
-    password = models.CharField(max_length=255)
+    user_id = models.BigIntegerField()
+    post_id = models.BigIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     deleted_at = models.DateTimeField()

@@ -1,12 +1,11 @@
 from django.db import models
+# from ..models.auth_model import User
 
-class User(models.Model):
+class ReacKey(models.Model):
     class Meta:
-        db_table = "user"
+        db_table = "react_key"
     id = models.AutoField(primary_key=True)
-    username = models.CharField(max_length=255)
-    email = models.CharField(max_length=255)
-    password = models.CharField(max_length=255)
+    key = models.CharField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     deleted_at = models.DateTimeField()
