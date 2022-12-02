@@ -1,3 +1,7 @@
+class status:
+    NO_DATA = 6
+
+
 STATUS = { 
     'SUCCESS': 1,
     'NOT_LOGIN': 2,
@@ -19,6 +23,9 @@ ERROR = {
     'NOT_EXISTS_USER_ID':'User_id is not found.',
     'NOT_EXISTS_POST_ID':'Post_id is not found.',
     'NOT_EXISTS_REACT':'React is not found.',
+    'MESSAGE_INPUT':'Message has not been intered.',
+    'NOT_EXISTS_COMMENT':'Comment is not exists.',
+    'NOT_EXISTS_GROUP':'Group is not exists.',
 }
 
 SUCCESS = {
@@ -31,4 +38,8 @@ SUCCESS = {
     'UNSAVE_POST': 'Post is unsaved.',
     'REACT_POST': 'React is saved.',
     'UN_REACT_POST': 'React is unsaved.',
+    'COMMENT_POST': 'Comment is success.',
+    'DROP_COMMENT': 'Comment is success.',
+    'ADD_GROUP': 'Group was added success.',
+    'DELETE_GROUP': 'Group was added success.',
 }

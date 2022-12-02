@@ -1,5 +1,5 @@
 from rest_framework.serializers import *
-from ..models.post_model import PostReact
+from ..models.post_react_model import PostReact
 from ..models.auth_model import User
 from ..models.post_model import Post
 from ..models.react_key import ReacKey

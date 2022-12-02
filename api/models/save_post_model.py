@@ -3,7 +3,7 @@ from django.db import models
 
 class SavePost(models.Model):
     class Meta:
-        db_table = "save_post"
+        db_table = 'save_post'
     id = models.AutoField(primary_key=True)
     user_id = models.BigIntegerField()
     post_id = models.BigIntegerField()
