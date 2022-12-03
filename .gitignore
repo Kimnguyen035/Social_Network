@@ -1,12 +1,10 @@
-auth_api/__pycache__/
-auth_api/Views/__pycache__/
-auth_api/models/__pycache__/
-auth_api/serializers/__pycache__/
-
-post_api/__pycache__/
-post_api/views/__pycache__/
-post_api/models/__pycache__/
-post_api/serializers/__pycache__/
+api/__pycache__/
+api/Views/__pycache__/
+api/models/__pycache__/
+api/serializers/__pycache__/
+api/helper/__pycache__/
+api/configs/__pycache__/
+api/validations/__pycache__/
 
 social_network/__pycache__/
 venv/
